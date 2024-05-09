@@ -37,8 +37,9 @@ const Hero = () => {
                 </Button>
               </Link>
               <Button variant='secondary' className='gap-x-2'>
-                Download CV
-                <Download size={18} />
+                <a href='/Félix Domingos.pdf' download>
+                  Download CV <Download size={18} />
+                </a> 
               </Button>
             </div>
             {/* socials */}
@@ -54,23 +55,23 @@ const Hero = () => {
               containerStyles='absolute top-[24%] -left-[5rem]'
               icon={<RiBriefcase4Fill />}
               endCountNum={3}
-              badgeText='Years Of Experience'
+              badgeText='Anos de Experiencias'
             />
             {/* badge 2 */}
             <Badge
               containerStyles='absolute top-[80%] -left-[1rem]'
               icon={<RiTodoFill />}
-              endCountNum={6}
+              endCountNum={4}
               endCountText='k'
-              badgeText='Finished Projects'
+              badgeText='Projetos Terminados'
             />
             {/* badge 3 */}
             <Badge
               containerStyles='absolute top-[55%] -right-8'
               icon={<RiTeamFill />}
-              endCountNum={9}
+              endCountNum={5}
               endCountText='k'
-              badgeText='Happy Clients'
+              badgeText='Clientes Felizes'
             />
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <DevImg

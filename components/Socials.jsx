@@ -16,7 +16,7 @@ const icons = [
     name: <RiYoutubeFill />,
   },
   {
-    path: '/',
+    path: '/https://www.linkedin.com/in/f%C3%A9lixdomingos/',
     name: <RiLinkedinFill />,
   },
   {
@@ -24,11 +24,11 @@ const icons = [
     name: <RiGithubFill />,
   },
   {
-    path: '/',
+    path: '/https://web.facebook.com/felizdomimgos.gamboa',
     name: <RiFacebookFill />,
   },
   {
-    path: '/',
+    path: '/https://www.instagram.com/felixsdomingos93/',
     name: <RiInstagramFill />,
   },
 ];
