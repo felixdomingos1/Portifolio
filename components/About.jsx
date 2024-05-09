@@ -166,7 +166,7 @@ const About = () => {
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                       I specialize in crafting intuitive websites with
                       cutting-edge technology, delivering dynamic and engaging
-                      user experiences.
+                      user Experiências.
                     </p>
                     {/* icons */}
                     <div className='grid xl:grid-cols-2 gap-4 mb-12'>
@@ -196,19 +196,19 @@ const About = () => {
                     <h3 className='h3 mb-8 text-center xl:text-left'>
                       Minha Jornada
                     </h3>
-                    {/* experience & education wrapper */}
+                    {/* Experiência & Educação wrapper */}
                     <div className='grid md:grid-cols-2 gap-y-8'>
-                      {/* experience */}
+                      {/* Experiência */}
                       <div className='flex flex-col gap-y-6'>
                         <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                           <Briefcase />
                           <h4 className='capitalize font-medium'>
-                            {getData(qualificationData, 'experience').title}
+                            {getData(qualificationData, 'Experiência').title}
                           </h4>
                         </div>
                         {/* list */}
                         <div className='flex flex-col gap-y-8'>
-                          {getData(qualificationData, 'experience').data.map(
+                          {getData(qualificationData, 'Experiência').data.map(
                             (item, index) => {
                               const { company, role, years } = item;
                               return (
@@ -233,17 +233,17 @@ const About = () => {
                           )}
                         </div>
                       </div>
-                      {/* education */}
+                      {/* Educação */}
                       <div className='flex flex-col gap-y-6'>
                         <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                           <GraduationCap size={28} />
                           <h4 className='capitalize font-medium'>
-                            {getData(qualificationData, 'education').title}
+                            {getData(qualificationData, 'Educação').title}
                           </h4>
                         </div>
                         {/* list */}
                         <div className='flex flex-col gap-y-8'>
-                          {getData(qualificationData, 'education').data.map(
+                          {getData(qualificationData, 'Educação').data.map(
                             (item, index) => {
                               const { university, qualification, years } = item;
                               return (
