@@ -36,10 +36,11 @@ const Hero = () => {
                   Contacta me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant='secondary' className='gap-x-2'>
+              <Button variant='secondary' className='gap-x-4'>
                 <a href='/Félix Domingos.pdf' download>
-                  Download CV <Download size={18} />
+                  Download CV
                 </a> 
+                  <Download size={18} />
               </Button>
             </div>
             {/* socials */}
@@ -61,8 +62,8 @@ const Hero = () => {
             <Badge
               containerStyles='absolute top-[80%] -left-[1rem]'
               icon={<RiTodoFill />}
-              endCountNum={4}
-              endCountText='k'
+              endCountNum={8}
+              // endCountText='k'
               badgeText='Projetos Terminados'
             />
             {/* badge 3 */}
@@ -70,14 +71,14 @@ const Hero = () => {
               containerStyles='absolute top-[55%] -right-8'
               icon={<RiTeamFill />}
               endCountNum={5}
-              endCountText='k'
+              // endCountText='k'
               badgeText='Clientes Felizes'
             />
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
-            {/* <DevImg
+            <DevImg
               containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom'
               imgSrc='/hero/developer.png'
-            /> */}
+            />
           </div>
         </div>
         {/* icon */}
