@@ -37,7 +37,13 @@ const Hero = () => {
                 </Button>
               </Link>
               <Button variant='secondary' className='gap-x-4'>
-                <a href='/Félix Domingos.pdf' download>
+                <a href='/Meu Resumo eng.pdf' download>
+                  Download Summaty
+                </a> 
+                  <Download size={18} />
+              </Button>
+              <Button variant='secondary' className='gap-x-4'>
+                <a href='/Félix Domingos eng.pdf' download>
                   Download CV
                 </a> 
                   <Download size={18} />

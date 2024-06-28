@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 const links = [
-  { path: '/', name: 'Início' },
+  { path: '/', name: 'Felidom' },
   { path: '/projects', name: 'Meus Projetos' },
   { path: '/contact', name: 'Contatos' },
   { path: '/amigos', name: 'Perfis' },
