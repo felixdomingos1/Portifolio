@@ -31,7 +31,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: 'Software Enginner / Fullstack Developer',
+    text: 'Software Developer / Fullstack Developer',
   },
   {
     icon: <HomeIcon size={20} />,
@@ -135,7 +135,7 @@ const About = () => {
           <div className='hidden xl:flex flex-1 relative'>
             <DevImg
               containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative'
-              imgSrc='/about/developer.png'
+              imgSrc='/About.png'
             />
           </div>
           {/* tabs */}
@@ -161,12 +161,10 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      Unmatched Service Quality for Over 10 Years
+                      Serviços de Qualidade a mais de 3 anos
                     </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      I specialize in crafting intuitive websites with
-                      cutting-edge technology, delivering dynamic and engaging
-                      user Experiências.
+                    Eu estou especializo-me na criação de sites intuitivos com tecnologia de ponta, oferecendo experiências de usuário dinâmicas e envolventes.
                     </p>
                     {/* icons */}
                     <div className='grid xl:grid-cols-2 gap-4 mb-12'>
@@ -277,7 +275,7 @@ const About = () => {
                     <h3 className='h3 mb-8'>Oque eu uso Diariamente</h3>
                     {/* skills */}
                     <div className='mb-16'>
-                      <h4 className='text-xl font-semibold mb-2'>Skills</h4>
+                      <h4 className='text-xl font-semibold mb-2'>Habilidades</h4>
                       <div className='border-b border-border mb-4'></div>
                       {/* skill list */}
                       <div>

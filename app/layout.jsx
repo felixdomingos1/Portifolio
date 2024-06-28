@@ -1,3 +1,5 @@
+"use client"
+
 import { Outfit } from 'next/font/google';
 import './globals.css';
 
@@ -9,21 +11,24 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 
 const outfit = Outfit({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Felix Domingos',
-  description: 'Felix Domingos Portifolio',
-};
+// export const metadata = {
+//   title: 'Felix Domingos',
+//   description: 'Felix Domingos Portifolio',
+// };
                                                                                                       
 export default function RootLayout({ children }) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <title> Felix Domingos </title>
+      </head>
       <body className={outfit.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
           {children}
           <Footer />
         </ThemeProvider>
-      </body>
-    </html>
+       </body>
+     </html>
   );
 }

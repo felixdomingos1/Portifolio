@@ -12,7 +12,7 @@ const Footer = () => {
           />
           {/* copyright */}
           <div className='text-muted-foreground'>
-            Copyright &copy; Félix Domingos. Todos os Direitos Reservados.
+            Copyright &copy; Félix Domingos. Todos os Direitos Reservados 2021 - {new Date().getFullYear()}.
           </div>
         </div>
       </div>
