@@ -31,7 +31,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: 'Software Enginner / Fullstack Developer',
+    text: 'Software Developer / Fullstack Developer',
   },
   {
     icon: <HomeIcon size={20} />,
