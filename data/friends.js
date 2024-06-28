@@ -179,7 +179,7 @@ const friends = [
         description: 'Delhi, India · Híbrida.'
       }
     ],
-    skills: ['Amazon Web Services (AWS)', 'Cloud Computing','Unit Testing', 'System Integration Testing', 'Team Leadership', 'Kubernetes'],
+    skills: ['Amazon Web Services (AWS)', 'Cloud Computing','Unit Testing', 'System Integration Testing', 'Team Leadership', 'Kubernetes', 'Kotlin', 'Flutter', 'Dart'],
     education: [
       {
         institution: 'Indraprastha Institute of Information Technology, Delhi',

@@ -4,13 +4,14 @@ import { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { User, MailIcon, ArrowRightIcon, MessageSquare } from 'lucide-react';
+import { User, MailIcon, ArrowRightIcon, MessageSquare, Podcast } from 'lucide-react';
 import axios from 'axios';
 
 const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject:'',
     message: ''
   });
 
@@ -47,6 +48,10 @@ const Form = () => {
       <div className='relative flex items-center'>
         <Input type='email' id='email' placeholder='Email' value={formData.email} onChange={handleChange} />
         <MailIcon className='absolute right-6' size={20} />
+      </div>
+      <div className='relative flex items-center'>
+        <Input type='subject' id='subject' placeholder='Assunto' value={formData.subject} onChange={handleChange} />
+        <Podcast className='absolute right-6' size={20} />
       </div>
       <div className='relative flex items-center'>
         <Textarea id='message' placeholder='Type Your Message Here.' value={formData.message} onChange={handleChange} />

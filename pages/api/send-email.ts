@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).send({ message: 'Only POST requests allowed' });
   }
 
-  const { name, email, message } = req.body;
+  const { name, email, message, subject } = req.body;
  
   const transporter = nodemailer.createTransport({
     host:'smtp.gmail.com',
@@ -20,17 +20,18 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   });
 
   const mailOptions = {
-    from: email,
-    to: process.env.RECIPIENT_EMAIL,
-    subject: `Message from ${name}`,
-    text: message
+    from: `${subject}`,
+    to: process.env.RECIPIENT_EMAIL ,
+    subject:`${subject}`,
+    text: `Olá Eu sou ${name} este é a minha mensagem ${message} e este é o meu Email ${email}`
   };
 
   try {
+    
     await transporter.sendMail(mailOptions);
     res.status(200).send('Email enviado com sucesso');
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending email:', error.message);
     res.status(500).send('Erro ao enviar o email');
   }
 }
