@@ -38,7 +38,7 @@ const Hero = () => {
               </Link>
               <Button variant='secondary' className='gap-x-4'>
                 <a href='/Meu Resumo eng.pdf' download>
-                  Download Summaty
+                  Download Summary
                 </a> 
                   <Download size={18} />
               </Button>
