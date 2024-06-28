@@ -1,38 +1,9 @@
 'use client';
 
 import React from 'react';
-import FriendCard from '@/components/FriendsCard';
+import FriendCard from '../../components/FriendsCard';
+import friends from "/data/friends";
 
-const friends = [
-  { 
-    id:'jose-goncalves',
-    name: 'José Gonçalves', 
-    expertise: 'Software Engineer', 
-    github: 'https://github.com/mariovarela', 
-    linkedin:'https://www.linkedin.com/in/jgoncalves8080/',
-    image: '/friends/JoseGonçalves.jpeg', 
-    description: 'JavaScript (BackEnd: NodeJs, Web: ReactJs, Mobile: React Native).',
-    link: 'https://joaosilva.dev'
-  },
-  { 
-    id:'paulino-passil',
-    name: 'Maria Oliveira', 
-    expertise: 'Backend Developer', 
-    image: '/friends/mario.png', 
-    github: 'https://github.com/mariaoliveira', 
-    description: 'Focada em Node.js e Python',
-    link: 'https://mariaoliveira.dev'
-  },
-  { 
-    id:'genilson-araujo',
-    name: 'Genilson Araujo', 
-    expertise: 'Full Stack Developer', 
-    github: 'https://github.com/carlossouza', 
-    image: '/images/carlos.jpg', 
-    description: 'Trabalha com MERN stack',
-    link: null
-  },
-];
 
 const FriendsList = () => {
   return (

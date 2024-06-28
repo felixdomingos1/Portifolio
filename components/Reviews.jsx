@@ -18,6 +18,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import friends from '../data/friends';
 
 const reviewsData = [
   {
@@ -103,7 +104,7 @@ const Reviews = () => {
   return (
     <section className='mb-12 xl:mb-32'>
       <div className='container mx-auto'>
-        <h2 className='section-title mb-12 text-center mx-auto'>Reviews</h2>
+        <h2 className='section-title mb-12 text-center mx-auto'>Recomendações</h2>
         {/* slider */}
         <Swiper
           slidesPerView={1}
@@ -118,7 +119,7 @@ const Reviews = () => {
           }}
           className='h-[350px]'
         >
-          {reviewsData.map((person, index) => {
+          {friends.map((person, index) => {
             return (
               <SwiperSlide key={index}>
                 <Card className='bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]'>
@@ -126,16 +127,17 @@ const Reviews = () => {
                     <div className='flex items-center gap-x-4'>
                       {/* image */}
                       <Image
-                        src={person.avatar}
+                        src={person.image}
                         width={70}
                         height={70}
-                        alt=''
+                        alt={person.name}
                         priority
+                        className="rounded-full border-4 border-white shadow-lg z-10" 
                       />
                       {/* name */}
                       <div className='flex flex-col'>
                         <CardTitle>{person.name}</CardTitle>
-                        <p>{person.job}</p>
+                        <p>{person.headline}</p>
                       </div>
                     </div>
                   </CardHeader>
