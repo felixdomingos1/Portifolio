@@ -22,7 +22,6 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
     try {
       const response = await axios.post('/api/send-email', formData, {
         headers: {
@@ -30,6 +29,12 @@ const Form = () => {
         }
       });
       if (response.status === 200) {
+        setFormData({
+          name: '',
+          email: '',
+          subject:'',
+          message: ''
+        })
         alert('Email enviado com sucesso!');
       } else {
         alert('Falha ao enviar o email.');
