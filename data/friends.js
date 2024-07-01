@@ -442,11 +442,11 @@ const friends = [
     image: '/friends/DomingosMatumona.png',
     coverImage: '/friends/DomingosMatumona.png',
     name: 'Domingos Matumona',
-    headline: 'Software Developer',
+    headline: 'Software Developer [Angular, NodeJS, ReactJS, React Native]',
     location: 'Luanda, Angola',
     github: 'https://github.com/eduardojpanzo',
     linkedin: 'https://www.linkedin.com/in/domingos-matumona//',
-    expertise:'Software Developer [Angular, NodeJS, ReactJS, React Native]',
+    expertise:'Software Developer',
     review:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi aspernatur',
     experience: [
       {
