@@ -456,7 +456,7 @@ const friends = [
         description: 'Angola · Presencial'
       },
     ],
-    skills: ['Chakra UI', 'Computação Gráfica', 'NodeJs', 'TypeScript', 'PHP', 'ReactJs', 'NextJs'],
+    skills: ['ASP.NET WEB APIASP', 'OpneAI API', 'NodeJs', 'Angular', 'PHP', 'ReactJs', 'NextJs', 'TypeScript'],
     education: [
       {
         institution: 'INSTITUTO POLITÉCNICO INDUSTRIAL DE LUANDA - MAKARENCO',
