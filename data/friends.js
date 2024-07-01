@@ -436,6 +436,41 @@ const friends = [
       }
     ]
     }, 
+     
+  {
+    id:'domingos-matumona',
+    image: '/friends/DomingosMatumona.jpeg',
+    coverImage: '/friends/DomingosMatumona.jpeg',
+    name: 'Domingos Matumona',
+    headline: 'Software Developer',
+    location: 'Luanda, Angola',
+    github: 'https://github.com/eduardojpanzo',
+    linkedin: 'https://www.linkedin.com/in/domingos-matumona//',
+    expertise:'Software Developer [Angular, NodeJS, ReactJS, React Native]',
+    review:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi aspernatur',
+    experience: [
+      {
+        role: 'Software Developer',
+        company: 'XD Portugal · Tempo integral',
+        dates: 'ago de 2023 - o momento · 1 ano',
+        description: 'Angola · Presencial'
+      },
+    ],
+    skills: ['Chakra UI', 'Computação Gráfica', 'NodeJs', 'TypeScript', 'PHP', 'ReactJs', 'NextJs'],
+    education: [
+      {
+        institution: 'INSTITUTO POLITÉCNICO INDUSTRIAL DE LUANDA - MAKARENCO',
+        degree: 'Técnico de Gestão de Sistemas Informáticos',
+        dates: '2019 - 2023'
+      }
+    ],
+    recommendations: [
+      {
+        text: 'xyz.',
+        author: 'xyz'
+      }
+    ]
+    }, 
     
     {
     id:'mauricio-costa',
