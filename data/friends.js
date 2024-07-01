@@ -439,8 +439,8 @@ const friends = [
      
   {
     id:'domingos-matumona',
-    image: '/friends/DomingosMatumona.jpeg',
-    coverImage: '/friends/DomingosMatumona.jpeg',
+    image: '/friends/DomingosMatumona.png',
+    coverImage: '/friends/DomingosMatumona.png',
     name: 'Domingos Matumona',
     headline: 'Software Developer',
     location: 'Luanda, Angola',
