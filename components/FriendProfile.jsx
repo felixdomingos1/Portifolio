@@ -11,6 +11,7 @@ const FriendProfile = ({ friend }) => {
           layout="fill" 
           objectFit="cover" 
           alt={`${friend.name}'s cover`} 
+          fetchpriority="high" 
           priority
         />
       </div>

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Layout from '../../app/layout';
 import FriendProfile from '../../components/FriendProfile';
 import friends from '/data/friends';
+import ErrorCard from '../../components/ErrorCard';
 
 const FriendPage = () => {
   const router = useRouter();
@@ -11,13 +12,16 @@ const FriendPage = () => {
 
   const friend = friends.find(friend => friend.id === id);
 
-  if (!friend) {
-    return <p>Amigo não encontrado.</p>;
-  }
-
   return (
     <Layout>
-      <FriendProfile friend={friend} />
+      {
+        friend ? (
+
+          <FriendProfile friend={friend} />
+        ): (
+          <ErrorCard message='Amigo Não encontrado'/>
+        )
+      }
     </Layout>
   );
 };
