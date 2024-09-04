@@ -12,6 +12,7 @@ const links = [
   { path: '/projects', name: 'Meus Projetos' },
   { path: '/contact', name: 'Contatos' },
   { path: '/amigos', name: 'Perfis' },
+  { path: '/login', name: 'Entrar' },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {

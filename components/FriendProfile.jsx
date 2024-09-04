@@ -3,16 +3,27 @@ import Image from 'next/image';
 import { Github, Linkedin } from 'lucide-react';
 
 const FriendProfile = ({ friend }) => {
+
+  console.log(friend);
+  if (!friend) {
+    return
+  }
+
   return (
     <div className="friend-profile">
       <div className="profile-cover relative h-48 bg-gray-200">
-        <Image 
+       {
+        friend.coverImage && (
+          <Image 
           src={friend.coverImage} 
           layout="fill" 
           objectFit="cover" 
           alt={`${friend.name}'s cover`} 
+          fetchpriority="high" 
           priority
         />
+        )
+       }
       </div>
       <div className="profile-info flex flex-col items-center -mt-20 relative z-10">
         {/* Imagem de perfil */}
