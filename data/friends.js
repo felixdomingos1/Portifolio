@@ -444,7 +444,7 @@ const friends = [
     name: 'Domingos Matumona',
     headline: 'Software Developer [Angular, NodeJS, ReactJS, React Native]',
     location: 'Luanda, Angola',
-    github: 'https://github.com/eduardojpanzo',
+    github: 'https://github.com/domingosmatumona07',
     linkedin: 'https://www.linkedin.com/in/domingos-matumona//',
     expertise:'Software Developer',
     review:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi aspernatur',
